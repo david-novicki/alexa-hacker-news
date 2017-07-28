@@ -23,7 +23,7 @@ module.exports.top3 = (event, context, callback) => {
           type: 'PlainText',
           text: `The top articles are ${titles.join(', ')}.`,
         },
-        shouldEndSession: false,
+        shouldEndSession: true,
       },
     };
     callback(null, response);
